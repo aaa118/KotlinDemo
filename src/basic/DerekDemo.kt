@@ -2,7 +2,7 @@
  * Created by derekbanas
  */
 
-package demo
+package demo.basic
 
 import java.util.Random
 
@@ -290,7 +290,7 @@ fun main(args : Array<String>) {
     println("1 $two $three")
 
     // Send a variable number of parameters
-    println("Sum : ${getSum(1,2,3,4,5)}")
+    println("Sum : ${getSum(1, 2, 3, 4, 5)}")
 
     // We can define function literals
     val multiply = {num1: Int, num2: Int -> num1 * num2}
@@ -588,7 +588,7 @@ interface Flyable {
 // To implement the interface we follow the
 // constructor parameters with a colon and the
 // interface name
-class Bird constructor(val name: String, override var flies: Boolean = true) : Flyable{
+class Bird constructor(val name: String, override var flies: Boolean = true) : Flyable {
 
     // We must also override any methods in the interface
     override fun fly(distMiles: Double): Unit{
