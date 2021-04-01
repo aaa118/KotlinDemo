@@ -1,6 +1,6 @@
 fun main() {
-//    arraysDemo()
-    listDemo()
+    arraysDemo()
+//    listDemo()
 
 }
 
@@ -8,22 +8,18 @@ private fun arraysDemo() {
     val things = arrayOf("Java", "kotlom", "tesing")
 
     things.forEach {
-        println(it)
-    }
-
-    things.forEach { thing ->
-        println(thing)
+        println(it[0])
     }
 
 
-    things.forEachIndexed { index, s ->
+    things.forEachIndexed { index, _ ->
 
-        println(s.length)
+        println(things[index])
     }
-    things.forEachIndexed { _, thing ->
-        println(thing)
-
-    }
+//    things.forEachIndexed { _, thing ->
+//        println(thing)
+//
+//    }
 }
 
 private fun listDemo() {

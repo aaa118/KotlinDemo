@@ -201,10 +201,14 @@ fun main(args : Array<String>) {
     when (age) {
 
         // Match a list
-        0,1,2,3,4 -> println("Go to Preschool")
+        0,1,2,3,4 -> {
+            println("Go to Preschool")
+        }
 
         // Match a specific value
-        5 -> println("Go to Kindergarten")
+        5 -> {
+            println("Go to Kindergarten")
+        }
 
         // Match a range
         in 6..17 -> {
